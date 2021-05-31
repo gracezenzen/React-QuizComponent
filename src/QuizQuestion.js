@@ -25,7 +25,7 @@ class QuizQuestion extends Component {
     }
 
     handleClick(buttonText) {
-        if (this.props.quiz_question.answer == buttonText) {
+        if (this.props.quiz_question.answer === buttonText) {
             this.props.showNextQuestionHandler()
             this.setState({incorrectAnswer: false})
         } else {
